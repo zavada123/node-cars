@@ -1,0 +1,6 @@
+extends layout
+
+block content
+    each car in cars
+        div название #{car.name} цена #{car.price}
+        img(src=`${car.url}`, alt="")
